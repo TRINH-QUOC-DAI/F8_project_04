@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+}
