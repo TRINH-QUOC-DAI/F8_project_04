@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #2e80ce;
+    --head-color-bg: #10375c;
+    --line-clamp: 2;
+}
+
 body,
 html {
     scroll-behavior: smooth;
@@ -15,4 +21,253 @@ body {
     font-weight: 400;
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
+}
+
+/* common */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+button:hover,
+a.btn:hover {
+    opacity: 0.7;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 205px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #ffffff;
+    background: var(--primary-color);
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ===logo common */
+.logo {
+    display: inline-flex;
+    font-size: 1rem;
+    margin-right: 120px;
+}
+
+.logo__circle {
+    display: inline-block;
+    position: relative;
+}
+
+.logo__circle:before,
+.logo__circle::after {
+    content: " ";
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.logo__circle::before {
+    width: 3em;
+    height: 3em;
+    background: var(--primary-color);
+}
+
+.logo__circle::after {
+    position: absolute;
+    left: 1.1em;
+    top: 1.1em;
+    width: 1.6em;
+    height: 1.6em;
+    background: #fff;
+}
+
+.logo__text {
+    margin-left: 0.6em;
+    text-align: right;
+}
+
+.logo__brand {
+    display: block;
+    font-size: 1.8em;
+    line-height: 0.78;
+    color: #ffffff;
+}
+
+.logo__brand--small {
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.2;
+}
+
+/* ===HEADER */
+.header {
+    min-height: 100vh;
+    background: var(--head-color-bg);
+}
+
+/* ==head-top */
+
+.head-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.head-top .nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__link {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    padding: 8px 15px;
+    margin: 0 6px;
+    color: #c9d2da;
+}
+
+.nav__link--active {
+    position: relative;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.nav__link--active::before {
+    position: absolute;
+    left: 0;
+    content: " ";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.nav__item:hover .nav__link {
+    font-weight: 400;
+}
+
+.head-top .actions {
+    display: flex;
+}
+
+.actions__action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: #fff;
+    background: transparent;
+    width: 104px;
+    border-radius: 22px;
+    height: 44px;
+}
+
+.actions__action:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.actions__action--weight {
+    font-weight: 300;
+    color: #c9d2da;
+}
+
+.head-top .actions__action--bg {
+    background: var(--primary-color);
+}
+
+/* ==head-hero */
+.hero {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 74px);
+}
+
+.hero .hero__infor {
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__title {
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #c9d2da;
+}
+
+.booking {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.booking__hotel {
+    margin-left: 38px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero__images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 6px;
+}
+
+.hero__img {
+    border-radius: 6px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.hero__img:first-child {
+    position: relative;
+    z-index: 2;
+    width: 330px;
+    height: 540px;
+    background: lightcoral;
+}
+
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
+    margin-left: -6px;
+    background: lightblue;
 }
