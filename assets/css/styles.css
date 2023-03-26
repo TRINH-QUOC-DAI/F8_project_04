@@ -711,3 +711,34 @@ a.btn:hover {
 .news__item:hover .new__item-infor {
     border-color: #fff;
 }
+
+/* ===WELLCOME */
+.wellcome {
+    padding: 35px 0;
+    margin-top: 100px;
+}
+
+.wellcome-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    background: #f7fbff;
+}
+
+.wellcome__hr {
+    margin-top: 18px;
+    display: inline-block;
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+}
+
+.wellcome__desc {
+    width: 617px;
+    margin: 18px 0 38px 0;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+}
