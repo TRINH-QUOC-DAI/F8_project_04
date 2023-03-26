@@ -581,12 +581,40 @@ a.btn:hover {
     margin-top: 38px;
 }
 
-/* .dentist__button:first-child {
-    color: #575f66;
-    border: 1px solid currentColor;
+/* ===APPLICATION */
+.application {
+    padding: 35px 0;
+    margin-top: 235px;
 }
 
-.dentist__button:last-child {
-    background: var(--primary-color);
+.application-box {
+    position: relative;
+}
+.application-content {
+    background: #2e80ce;
+    border-radius: 4px;
+    padding: 76px 70px 76px 514px;
+}
+
+.application__heading,
+.application__desc {
     color: #fff;
-} */
+}
+.application__heading {
+    width: 489px;
+}
+.application__desc {
+    font-weight: 300;
+}
+
+.application__download {
+    margin-top: 38px;
+    display: flex;
+    column-gap: 28px;
+}
+
+.application__img-phone {
+    position: absolute;
+    left: 70px;
+    bottom: 0;
+}
