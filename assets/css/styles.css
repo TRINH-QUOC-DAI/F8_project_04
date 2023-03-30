@@ -742,3 +742,125 @@ a.btn:hover {
     line-height: 1.75;
     text-align: center;
 }
+
+/* ===FOOTER */
+.footer {
+    margin-top: 135px;
+    padding-top: 100px;
+    font-family: "Open Sans", sans-serif;
+    background: #10375c;
+}
+
+.footer-row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+    border-bottom: 1px solid #406181;
+}
+
+.logo-link {
+    font-family: "Sora", sans-serif;
+}
+
+.footer__desc {
+    margin-top: 21px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #a9b3bb;
+}
+
+.footer__heading {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer__list {
+    margin-bottom: 28px;
+}
+
+.footer__item {
+    margin-bottom: 10px;
+}
+
+.footer__item-link {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #a9b3bb;
+}
+
+.footer__socials {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transition: 0.25s;
+    white-space: nowrap;
+}
+
+.footer__social-link:hover {
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.footer__desc-subcribe {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #a9b3bb;
+}
+
+.footer__form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer__form-input {
+    width: 212px;
+    height: 46px;
+    outline: none;
+    border: 1px solid #406181;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #fff;
+    background: transparent;
+}
+
+.footer__form-input::placeholder {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #9ca8b1;
+}
+
+.btn-footer {
+    margin-left: 12px;
+    border-radius: 4px;
+    width: 108px;
+    height: 46px;
+    background: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #ffffff;
+}
+
+.footer__copyright {
+    display: block;
+    padding: 28px 0 42px 0;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #aab3ba;
+}
